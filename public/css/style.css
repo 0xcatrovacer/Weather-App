@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+*{
+    font-family: 'Commissioner', sans-serif;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar{
+    margin-top: 9px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 70px;
+    color: white;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+
+#navbar a:hover{
+    /* color: rgb(255, 174, 0); */
+    color: rgb(139, 139, 139);
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 9%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+h1{
+    color: rgb(139, 139, 139);
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 150px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.content{
+    height: 684px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background: url(/img/bg.jpg) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 1224px;
+    width: 100%;
+    z-index: -3;
+    /* opacity: 0.8; */
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px;
+    align-items: center;
+    color: rgb(255, 174, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    width: 650px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#searchform{
+    margin-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#searchform input{
+    border: 2px solid black;
+    border-radius: 7px;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 17px;
+    padding: 3px 7px;
+}
+
+#btn{
+    border: 2px solid black;
+    font-family: 'Commissioner', sans-serif;
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 3px 6px;
+    background-color: rgb(255, 174, 0);
+    color: black;
+    font-weight: bold;
+}
+
+#msg-one {
+    margin-top: 70px;
+}
+
+#footer{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1210px;
+    position: absolute;
+    color: white;
+}
